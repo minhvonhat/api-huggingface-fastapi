@@ -7,7 +7,7 @@ Mã số sinh viên:24120202
 Lớp:Tư duy tính toán - 24CTT5
 
 ## 2. Mô hình và liên kết Hugging Face
-Tên mô hình: google/vit-base-patch16-224 
+Tên mô hình: google/vit-base-patch16-224  
 Liên kết:[https://huggingface.co/google/vit-base-patch16-224](https://huggingface.co/google/vit-base-patch16-224)
 
 ## 3. Mô tả chức năng hệ thống
@@ -66,7 +66,7 @@ Của Image_1.jpg
   ]
 }
 ```
-**label **: Nhãn dự đoán của mô hình cho hình ảnh.
+**label**: Nhãn dự đoán của mô hình cho hình ảnh.  
 **score**: Độ tin cậy của dự đoán, giá trị từ 0 đến 1, càng gần 1 thì mô hình càng chắc chắn về dự đoán đó.
 
 ## 7. Video demo
