@@ -18,7 +18,7 @@ Chức năng chính là nhận một tệp hình ảnh từ người dùng và t
 Để cài đặt các thư viện cần thiết, chạy lệnh sau trong terminal:
 ```bash
 pip install -r requirements.txt
-
+```
 ## 5. Hướng dẫn chạy chương trình
 
 -Khởi động server FastAPI bằng lệnh:
