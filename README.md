@@ -2,9 +2,9 @@
  Bài thực hành 1 - Web API với FastAPI và Hugging Face
 
 ## 1. Thông tin sinh viên
-Họ và tên:Võ Nhật Minh  
-Mã số sinh viên:24120202  
-Lớp:Tư duy tính toán - 24CTT5
+Họ và tên: Võ Nhật Minh  
+Mã số sinh viên: 24120202  
+Lớp: Tư duy tính toán - 24CTT3
 
 ## 2. Mô hình và liên kết Hugging Face
 Tên mô hình: google/vit-base-patch16-224  
