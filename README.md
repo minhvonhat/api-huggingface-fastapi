@@ -21,11 +21,14 @@ Chức năng chính là nhận một tệp hình ảnh từ người dùng và t
 ```bash
 pip install -r requirements.txt
 ```
-## 5. Hướng dẫn chạy chương trình
+## 5. Hướng dẫn chạy chương trình 
+**Note**: Áp dụng trên hệ điều hành Windows, sử dụng PowerShell để chạy các lệnh.  
+**Note**: còn Google Colab thì không cần cài đặt thư viện, chỉ cần chạy các cell code là được.
+
 Mở 3 tab terminal, mỗi tab thực hiện một công việc khác nhau:  
-Tab 1: Chạy server FastAPI cho main.py
-Tab 2: Dùng Pinggy để tạo đường dẫn public URL
-Tab 3: Chạy file test_api.py để triển khai API và gửi request
+Tab 1: Chạy server FastAPI cho main.py  
+Tab 2: Dùng Pinggy để tạo đường dẫn public URL  
+Tab 3: Chạy file test_api.py để triển khai API và gửi request  
 Trước tiên tạo môi trường ảo cho cả 3 tab bằng lệnh:
 ```bash
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
