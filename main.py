@@ -1,4 +1,5 @@
 from transformers import pipeline
+from fastapi import FastAPI, HTTPException, UploadFile, File
 from PIL import Image
 import io
 

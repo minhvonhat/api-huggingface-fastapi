@@ -15,20 +15,27 @@ Hệ thống là một Web API được xây dựng bằng FastAPI nhằm khai t
 Chức năng chính là nhận một tệp hình ảnh từ người dùng và thực hiện phân loại, trả về nhãn của sự vật trong ảnh cùng độ tin cậy tương ứng ở định dạng JSON.
 
 ## 4. Hướng dẫn cài đặt thư viện
+
+```
 Để cài đặt các thư viện cần thiết, chạy lệnh sau trong terminal:
 ```bash
 pip install -r requirements.txt
 ```
 ## 5. Hướng dẫn chạy chương trình
-
--Khởi động server FastAPI bằng lệnh:
+Mở 3 tab terminal, mỗi tab thực hiện một công việc khác nhau:  
+Tab 1: Chạy server FastAPI cho main.py
+Tab 2: Dùng Pinggy để tạo đường dẫn public URL
+Tab 3: Chạy file test_api.py để triển khai API và gửi request
+Trước tiên tạo môi trường ảo cho cả 3 tab bằng lệnh:
+```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.\venv\Scripts\activate
+```
+-Khởi động server FastAPI trong main.py bằng lệnh:
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
--Chạy file api chính để triển khai API:
-``` bash
-python test_api.py
-```
+
 -Dùng pinggy để lấy đường dẫn public URL:
 ```bash
 ssh -p 443 -R0:localhost:8000 qr@a.pinggy.io
@@ -36,6 +43,10 @@ ssh -p 443 -R0:localhost:8000 qr@a.pinggy.io
 Sau khi chạy pinggy nó sẽ trả về https://xxxx.a.free.pinggy.link
 Dán đường link vào BASE_URL trong file test_api.py
 
+-Chạy file api chính để triển khai API:
+``` bash
+python test_api.py
+```
 ## 6. Hướng dẫn sử dụng API:
 Ví dụ Request (Sử dụng Python requests):  
 Trước tiên phải có BASE_URL là đường dẫn public URL từ pinggy tệp hình ảnh đã chèn vào thư mục

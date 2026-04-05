@@ -1,6 +1,6 @@
 import requests
 # Thay bằng các đường link lấy từ pinggy
-BASE_URL = "http://ubrnx-136-113-169-159.run.pinggy-free.link"
+BASE_URL = "http://127.0.0.1:8000"
 
 print("--- 1. Kiểm tra giới thiệu API (GET /) ---")
 try:
